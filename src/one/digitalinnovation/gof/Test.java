@@ -52,11 +52,11 @@ public class Test {
 		
 		Facade facade = new Facade();
 		facade.migrarCliente("Venilton","Musculação", "14801788");
-		facade.migrarCliente("Venilton","Musculação", "14801788");
-		facade.migrarCliente("Venilton","Musculação", "14801788");
-		facade.migrarCliente("Venilton","Musculação", "14801788");
-		facade.migrarCliente("Venilton","Musculação", "14801788");
-		facade.migrarCliente("Venilton","Musculação", "14801788");
+		facade.migrarCliente("Diego","Corrida", "14801788");
+		facade.migrarCliente("Andre","Atletismo", "14801788");
+		facade.migrarCliente("Luide","Musculação/Funcional", "14801788");
+		facade.migrarCliente("Daniel","Funcional", "14801788");
+		facade.migrarCliente("Lucas","Futebol", "14801788");
 	}
 
 }
