@@ -5,10 +5,10 @@ import one.digitalinnovation.gof.singleton.SingletonEager;
 import one.digitalinnovation.gof.singleton.SingletonLazy;
 import one.digitalinnovation.gof.singleton.SingletonLazyHolder;
 import one.digitalinnovation.gof.strategy.Comportamento;
-import one.digitalinnovation.gof.strategy.ComportamentoAgressivo;
-import one.digitalinnovation.gof.strategy.ComportamentoDefensivo;
-import one.digitalinnovation.gof.strategy.ComportamentoNormal;
-import one.digitalinnovation.gof.strategy.Robo;
+import one.digitalinnovation.gof.strategy.TreinoPeito;
+import one.digitalinnovation.gof.strategy.TreinoCostas;
+import one.digitalinnovation.gof.strategy.TreinoPerna;
+import one.digitalinnovation.gof.strategy.Aluno;
 
 public class Test {
 
@@ -33,20 +33,20 @@ public class Test {
 		
 		// Strategy
 		
-		Comportamento defensivo = new ComportamentoDefensivo();
-		Comportamento normal = new ComportamentoNormal();
-		Comportamento agressivo = new ComportamentoAgressivo();
+		Comportamento TreinoCostas = new TreinoCostas();
+		Comportamento TreinoPerna = new TreinoPerna();
+		Comportamento TreinoPeito = new TreinoPeito();
 		
-		Robo robo = new Robo();
-		robo.setComportamento(normal);
-		robo.mover();
-		robo.mover();
-		robo.setComportamento(defensivo);
-		robo.mover();
-		robo.setComportamento(agressivo);
-		robo.mover();
-		robo.mover();
-		robo.mover();
+		Aluno aluno = new Aluno();
+		aluno.setComportamento(TreinoPerna);
+		aluno.mover();
+		aluno.mover();
+		aluno.setComportamento(TreinoCostas);
+		aluno.mover();
+		aluno.setComportamento(TreinoPeito);
+		aluno.mover();
+		aluno.mover();
+		aluno.mover();
 		
 		// Facade
 		

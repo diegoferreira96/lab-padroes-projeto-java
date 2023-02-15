@@ -1,6 +1,6 @@
 package one.digitalinnovation.gof.strategy;
 
-public class Robo {
+public class Aluno {
 	
 	private Comportamento comportamento;
 
